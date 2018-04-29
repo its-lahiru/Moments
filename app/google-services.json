@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "676971951283",
+    "firebase_url": "https://moments-7d1e8.firebaseio.com",
+    "project_id": "moments-7d1e8",
+    "storage_bucket": "moments-7d1e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676971951283:android:2c06adb29b658ec1",
+        "android_client_info": {
+          "package_name": "com.example.lahiru.moments"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676971951283-t7ass6rahgou9ce1jdhog2ti3tinq6ds.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lahiru.moments",
+            "certificate_hash": "632b7e4b850fdb19ab65a380dc6889d88d3694d7"
+          }
+        },
+        {
+          "client_id": "676971951283-4sv59cg74vmcn3g24rjvnttp1pdamoqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjgdofI1a7HaHCzy8zAqwNMTiPmFLK4t8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676971951283-4sv59cg74vmcn3g24rjvnttp1pdamoqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

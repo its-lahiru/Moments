@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Moments</string>
+    <string name="password">Password..</string>
+    <string name="email_hint">Email..</string>
+    <string name="moments">Moments</string>
+    <string name="welcome">Welcome To</string>
+    <string name="login_button">Log In to Account</string>
+    <string name="new_account_button">Need A New Account?</string>
+</resources>
