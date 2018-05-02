@@ -19,8 +19,10 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText loginEmailText, loginpassText;
-    private Button loginButton, loginRegButton;
+    private EditText loginEmailText;
+    private EditText loginpassText;
+    private Button loginButton;
+    private Button loginRegButton;
     private FirebaseAuth mAuth;
     private ProgressBar loginProgressBar;
 
@@ -31,11 +33,21 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        loginEmailText = (EditText) findViewById(R.id.et_login_email);
-        loginpassText = (EditText) findViewById(R.id.et_login_password);
-        loginButton = (Button) findViewById(R.id.btn_login_button);
-        loginRegButton = (Button) findViewById(R.id.btn_register_button);
-        loginProgressBar = (ProgressBar) findViewById(R.id.login_progress);
+        loginEmailText = findViewById(R.id.reg_email);
+        loginpassText = findViewById(R.id.reg_password);
+        loginButton = findViewById(R.id.btn_login_button);
+        loginRegButton = findViewById(R.id.btn_register_button);
+        loginProgressBar = findViewById(R.id.login_progress);
+
+        loginRegButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent regIntent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(regIntent);
+
+            }
+        });
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                 String loginPassword = loginpassText.getText().toString();
 
                 if (!TextUtils.isEmpty(loginEmail) && !TextUtils.isEmpty(loginPassword)) {
-                    loginProgressBar.setVisibility(View.VISIBLE);
+//                    loginProgressBar.setVisibility(View.VISIBLE);
 
                     mAuth.signInWithEmailAndPassword(loginEmail, loginPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
